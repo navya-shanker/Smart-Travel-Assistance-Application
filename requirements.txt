@@ -1,7 +1,6 @@
 streamlit
 requests
 pandas
-os
 dotenv
 datetime
 sqlite3
