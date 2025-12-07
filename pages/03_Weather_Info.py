@@ -16,6 +16,8 @@ import datetime as dt
 # Fetching the api key 
 load_dotenv()
 Weather_Api_key=os.getenv("Weather_Api_key") 
+if not Weather_Api_key:
+    Weather_Api_key=st.secrets["Weather_Api_key"]
 
 def get_weather_forecast(city_name, date):
     try:
