@@ -2,7 +2,5 @@ streamlit
 requests
 pandas
 dotenv
-datetime
-sqlite3
 bcrypt
 
