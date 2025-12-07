@@ -257,10 +257,10 @@ col_btn1, col_large_gap,col_btn2,col_large_gap,col_btn3 = st.columns([12, 50,10,
 
 with col_btn1:
     if st.button("<--Back"):
-        st.switch_page("pages/02_tourist_spots.py")
+        st.switch_page("pages/02_Tourist_Spots.py")
 with col_btn2:
     if st.button("Home"):
-        st.switch_page("pages/01_home_page.py")
+        st.switch_page("pages/01_Home_Page.py")
 with col_btn3:
     if st.button("Next-->"):
-        st.switch_page("pages/04_currency_converter.py")
+        st.switch_page("pages/04_Currency_Converter.py")
