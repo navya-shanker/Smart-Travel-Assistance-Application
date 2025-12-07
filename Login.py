@@ -131,7 +131,7 @@ def login_page():
                 st.success("Login successful! Redirecting to homepage...")
                 st.session_state['logged_in']=True
                 st.session_state['user_email']=email
-                st.switch_page("pages/01_home_page.py")
+                st.switch_page("pages/01_Home_Page.py")
                 st.rerun()
             else:
                 st.error("Login failed:Invalid email or password.")
