@@ -12,8 +12,12 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 #Fetching the api key 
+from dotenv import load_dotenv
 load_dotenv()
-Map_api_key=os.getenv("Map_api_key") 
+Map_api_key=os.getenv("Map_api_key")
+if not Map_api_key:
+    Map_api_key=st.secrets["Map_api_key"]
+    
 radius=25000 #25km radius of the city
 if 'city_data' not in st.session_state:
     st.session_state.city_data = None
