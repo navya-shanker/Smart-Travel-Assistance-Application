@@ -204,7 +204,7 @@ def register_page():
     </style>
     """, unsafe_allow_html=True)
     st.title("Create Your Account")
-    st.header("Discover amazing places and create unforgettable memories")
+    st.header("Discover Amazing Places And Create Unforgettable Memories!")
     with st.form(key="register_form"):
         st.subheader("Sign Up")
         email=st.text_input("📧 Email",key="reg_email")
