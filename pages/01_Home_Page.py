@@ -4,7 +4,7 @@ if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
     st.error("You must log in first!")
     st.stop()
 
-if st.sidebar.button("Logout"):
+if st.sidebar.button("Log out"):
     st.session_state["logged_in"] = False
     st.rerun()
 
@@ -21,7 +21,7 @@ col1,col2,col3=st.columns(3)
 with col1:
     with st.container(border=True):
         st.subheader("Top Destinations📍 and Restaraunts🍽️")
-        st.write("Discover the best places around the world and authentic dine-in places")
+        st.write("Discover the best places around the world and authentic dine-in places!!")
         if st.button(label="Explore",key="btn1"):
             st.switch_page("pages/02_Tourist_Spots.py")
             
@@ -36,7 +36,7 @@ with col2:
 with col3:
     with st.container(border=True):
         st.header("Currency Converter💲💱")
-        st.write("Convert currencies for your international trips")
+        st.write("Convert currencies instantly for your international trips")
         if st.button(label="Convert currency",key="btn3"):
             st.switch_page("pages/04_Currency_Converter.py")
            
