@@ -3,7 +3,7 @@ if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
     st.error("You must log in first!")
     st.stop()
 
-if st.sidebar.button("Logout"):
+if st.sidebar.button("Log out"):
     st.session_state["logged_in"] = False
     st.rerun()
 
