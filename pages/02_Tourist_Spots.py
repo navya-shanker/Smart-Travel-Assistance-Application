@@ -84,7 +84,7 @@ def get_city_info(city_input):
     latitude, longitude = get_city_coordinates(city_input, Map_api_key)
     
     if not latitude or not longitude:
-        print(f"Could not find coordinates for {city_input}.")
+        st.write(f"Could not find coordinates for {city_input}.")
         return None
     
     attractions = get_city_attractions(latitude, longitude, Map_api_key, radius)
