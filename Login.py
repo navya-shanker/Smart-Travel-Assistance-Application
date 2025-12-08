@@ -174,16 +174,8 @@ def register_page():
             border-radius: 12px;
             border: 1.5px solid #ffffff;
             padding: 10px;
-        }
-        /*text*/
-        .stTextInput>div>div>input {
-            background-color:#ffffff;
-            bordor-radius:12px;
-            bordor: 1.5px solid #ffffff;
-            padding: 10px;
-            
-            color:black !important;
-        }
+            color: black !important;
+        } 
             
         .stButton>button {
             background-color: #ffffff;
