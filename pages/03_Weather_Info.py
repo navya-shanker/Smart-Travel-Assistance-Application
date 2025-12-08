@@ -239,7 +239,7 @@ if submitted:
             # Display error from the backend (e.g., invalid date range)
             st.error(f"Weather Fetch Failed: {forecast_data['error']}")
         elif forecast_data:
-            st.success("Forecast Retrieved Successfully! 🥳")
+            st.success("Forecast Retrieved Successfully ! 🥳")
             
             st.markdown(
                 f'<div class="result-container">'
