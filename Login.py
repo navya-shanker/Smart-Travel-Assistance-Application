@@ -1,7 +1,7 @@
 import streamlit as st
 import sqlite3
 import bcrypt
-st.set_page_config(page_title="College portal",page_icon="🔐",layout="centered")
+st.set_page_config(page_title="Smart Travel Assistance Application",page_icon="🔐",layout="centered")
 if 'page' not in st.session_state:
     st.session_state['page']='login'
 if 'logged_in' not in st.session_state:
